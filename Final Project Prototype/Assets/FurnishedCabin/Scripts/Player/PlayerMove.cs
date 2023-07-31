@@ -12,7 +12,6 @@ public class PlayerMove : MonoBehaviour
 
     private CharacterController charController;
 
-
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
