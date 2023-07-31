@@ -2,9 +2,9 @@ Unity Editor version:    2022.3.5f1 (9674261d40ee)
 Branch:                  2022.3/release
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 11.1 (Build 20C69)
-Darwin version:          20.2.0
-Architecture:            x86_64
+macOS version:           Version 13.4.1 (c) (Build 22F770820d)
+Darwin version:          22.5.0
+Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        8192 MB
 Using pre-set license
@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker1
 -projectPath
-/Users/katieli/Documents/GitHub/Shattered/Final Project Prototype
+/Users/ga_eun/Documents/Unity Games/Final Project Prototype
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58642
-Successfully changed project path to: /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype
-/Users/katieli/Documents/GitHub/Shattered/Final Project Prototype
+50388
+Successfully changed project path to: /Users/ga_eun/Documents/Unity Games/Final Project Prototype
+/Users/ga_eun/Documents/Unity Games/Final Project Prototype
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,63 +56,65 @@ Successfully changed project path to: /Users/katieli/Documents/GitHub/Shattered/
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4576562688] Host "[IP] 169.233.174.202 [Port] 0 [Flags] 2 [Guid] 698947120 [EditorId] 698947120 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-174-202.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8331386368] Host "[IP] 169.233.162.220 [Port] 0 [Flags] 2 [Guid] 2305225225 [EditorId] 2305225225 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-162-220.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4576562688] Host "[IP] 169.233.174.202 [Port] 0 [Flags] 2 [Guid] 698947120 [EditorId] 698947120 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-174-202.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8331386368] Host "[IP] 169.233.162.220 [Port] 0 [Flags] 2 [Guid] 2305225225 [EditorId] 2305225225 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-162-220.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 53.04 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 11.07 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Assets
+[Subsystems] Discovering subsystems at path /Users/ga_eun/Documents/Unity Games/Final Project Prototype/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
-Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
+ preferred device: Apple M2 (high power)
 Metal devices available: 1
-0: Intel(R) Iris(TM) Plus Graphics (low power)
-Using device Intel(R) Iris(TM) Plus Graphics (low power)
-Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
+0: Apple M2 (high power)
+Using device Apple M2 (high power)
+Initializing Metal device caps: Apple M2
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56485
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56547
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.5f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.009744 seconds.
-- Loaded All Assemblies, in  1.641 seconds
+Registered in 0.002539 seconds.
+- Loaded All Assemblies, in  0.222 seconds
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.054 seconds
-Domain Reload Profiling: 2694ms
-	BeginReloadAssembly (434ms)
+- Finished resetting the current domain, in  0.135 seconds
+Domain Reload Profiling: 357ms
+	BeginReloadAssembly (75ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (295ms)
-	RebuildNativeTypeToScriptingClass (72ms)
-	initialDomainReloadingComplete (241ms)
-	LoadAllAssembliesAndSetupDomain (598ms)
-		LoadAssemblies (434ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (89ms)
+		LoadAssemblies (76ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (590ms)
-			TypeCache.Refresh (583ms)
-				TypeCache.ScanAssembly (493ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1055ms)
+		AnalyzeDomain (87ms)
+			TypeCache.Refresh (86ms)
+				TypeCache.ScanAssembly (77ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (135ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (840ms)
+		SetupLoadedEditorAssemblies (101ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
-			SetLoadedEditorAssemblies (29ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (14ms)
-			ProcessInitializeOnLoadAttributes (572ms)
-			ProcessInitializeOnLoadMethodAttributes (189ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (68ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -120,54 +122,55 @@ Domain Reload Profiling: 2694ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.530 seconds
-Refreshing native plugins compatible for Editor in 4.90 ms, found 2 plugins.
+Symbol file LoadedFromMemory doesn't match image /Users/ga_eun/Documents/Unity Games/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/ga_eun/Documents/Unity Games/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.518 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
 Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.741 seconds
-Domain Reload Profiling: 6274ms
-	BeginReloadAssembly (418ms)
+- Finished resetting the current domain, in  0.403 seconds
+Domain Reload Profiling: 922ms
+	BeginReloadAssembly (71ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (18ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (99ms)
-	RebuildCommonClasses (203ms)
-	RebuildNativeTypeToScriptingClass (71ms)
-	initialDomainReloadingComplete (122ms)
-	LoadAllAssembliesAndSetupDomain (2716ms)
-		LoadAssemblies (1669ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (397ms)
+		LoadAssemblies (228ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1207ms)
-			TypeCache.Refresh (1161ms)
-				TypeCache.ScanAssembly (1123ms)
-			ScanForSourceGeneratedMonoScriptInfo (32ms)
-			ResolveRequiredComponents (14ms)
-	FinalizeReload (2744ms)
+		AnalyzeDomain (192ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (175ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (404ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2065ms)
+		SetupLoadedEditorAssemblies (314ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (21ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (244ms)
-			ProcessInitializeOnLoadAttributes (1672ms)
-			ProcessInitializeOnLoadMethodAttributes (110ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			BeforeProcessingInitializeOnLoad (34ms)
+			ProcessInitializeOnLoadAttributes (264ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.10 seconds
-Refreshing native plugins compatible for Editor in 3.95 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.31 seconds
+Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3446 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 37 unused Assets / (99.0 KB). Loaded Objects now: 3947.
-Memory consumption went from 274.3 MB to 274.2 MB.
-Total: 11.298599 ms (FindLiveObjects: 1.280547 ms CreateObjectMapping: 0.478083 ms MarkObjects: 8.829031 ms  DeleteObjects: 0.708375 ms)
+Unloading 3450 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 37 unused Assets / (109.3 KB). Loaded Objects now: 3951.
+Memory consumption went from 162.0 MB to 161.9 MB.
+Total: 3.203250 ms (FindLiveObjects: 0.176375 ms CreateObjectMapping: 0.083208 ms MarkObjects: 2.813333 ms  DeleteObjects: 0.129916 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -183,151 +186,41 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 13632.621356 seconds.
-  path: Assets/Weapon box/Texture/Weapon box_Metallic.tga
-  artifactKey: Guid(65bb81777dedc484a90dba6443c13fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon box/Texture/Weapon box_Metallic.tga using Guid(65bb81777dedc484a90dba6443c13fe4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bea0b8fd6754aaf481ac9e16c9b42ed5') in 0.585825 seconds
+  Time since last request: 14643.498780 seconds.
+  path: Assets/IgniteCoders/Simple Water Shader/Prefabs
+  artifactKey: Guid(659a758b0bea88342a8f7d3812ab9415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IgniteCoders/Simple Water Shader/Prefabs using Guid(659a758b0bea88342a8f7d3812ab9415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef94ac7d060536d83ea3ee943c827da5') in 0.001036 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000513 seconds.
-  path: Assets/Weapon box/Texture/Weapon box_Albedo.tga
-  artifactKey: Guid(64508f0aeae791f40a0d3d443465db45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon box/Texture/Weapon box_Albedo.tga using Guid(64508f0aeae791f40a0d3d443465db45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75812ffe761d38e42ca077410b618869') in 0.044297 seconds
+  Time since last request: 0.000108 seconds.
+  path: Assets/IgniteCoders/Simple Water Shader
+  artifactKey: Guid(19f81e3626b5b4f5c9a9e1706cbebd6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IgniteCoders/Simple Water Shader using Guid(19f81e3626b5b4f5c9a9e1706cbebd6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db88da25e654feadb7ee0a8064e78f39') in 0.000149 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002674 seconds.
-  path: Assets/Weapon box/Texture/Weapon box_Normal.tga
-  artifactKey: Guid(60da8292c1a0e0e47bfeb957a7e719a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon box/Texture/Weapon box_Normal.tga using Guid(60da8292c1a0e0e47bfeb957a7e719a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a10552c11fd111120af74d0f4dad4a1f') in 0.421497 seconds
+  Time since last request: 0.000104 seconds.
+  path: Assets/IgniteCoders/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab
+  artifactKey: Guid(838c0bef810bfe94d8e33947c3cba7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IgniteCoders/Simple Water Shader/Prefabs/WaterReflectionCamera.prefab using Guid(838c0bef810bfe94d8e33947c3cba7c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff8ea4afc6be13025bde9476329306a') in 0.013385 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 41.772235 seconds.
+  path: Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_02.mat
+  artifactKey: Guid(8759ec410a6774b4ea13ae32dc2b8d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IgniteCoders/Simple Water Shader/Resources/Water_mat_02.mat using Guid(8759ec410a6774b4ea13ae32dc2b8d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def592d9230da26d11569643877139b2') in 0.117384 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/IgniteCoders/Simple Water Shader/Resources/WaterBlock_50m.mesh
+  artifactKey: Guid(3da23cdf512599b42881988944f3918c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/IgniteCoders/Simple Water Shader/Resources/WaterBlock_50m.mesh using Guid(3da23cdf512599b42881988944f3918c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cf439427f10c6d7f18a72f00e3ead08') in 0.019314 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  3.297 seconds
-Refreshing native plugins compatible for Editor in 8.02 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.304 seconds
-Domain Reload Profiling: 8608ms
-	BeginReloadAssembly (494ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (22ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (226ms)
-	RebuildCommonClasses (124ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (2567ms)
-		LoadAssemblies (647ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2069ms)
-			TypeCache.Refresh (2049ms)
-				TypeCache.ScanAssembly (1956ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (20ms)
-	FinalizeReload (5310ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2000ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (23ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (295ms)
-			ProcessInitializeOnLoadAttributes (1505ms)
-			ProcessInitializeOnLoadMethodAttributes (140ms)
-			AfterProcessingInitializeOnLoad (11ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (34ms)
-Refreshing native plugins compatible for Editor in 8.30 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3421 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (123.4 KB). Loaded Objects now: 3956.
-Memory consumption went from 274.6 MB to 274.5 MB.
-Total: 40.782203 ms (FindLiveObjects: 0.836804 ms CreateObjectMapping: 1.131118 ms MarkObjects: 38.013114 ms  DeleteObjects: 0.759083 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  2.371 seconds
-Refreshing native plugins compatible for Editor in 2.96 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  5.164 seconds
-Domain Reload Profiling: 7536ms
-	BeginReloadAssembly (411ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (17ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (167ms)
-	RebuildCommonClasses (144ms)
-	RebuildNativeTypeToScriptingClass (61ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (1684ms)
-		LoadAssemblies (781ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1058ms)
-			TypeCache.Refresh (1042ms)
-				TypeCache.ScanAssembly (1018ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (5166ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2367ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (26ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (330ms)
-			ProcessInitializeOnLoadAttributes (1808ms)
-			ProcessInitializeOnLoadMethodAttributes (164ms)
-			AfterProcessingInitializeOnLoad (9ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (39ms)
-Refreshing native plugins compatible for Editor in 7.49 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3422 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (99.6 KB). Loaded Objects now: 3959.
-Memory consumption went from 275.0 MB to 274.9 MB.
-Total: 38.496862 ms (FindLiveObjects: 0.804274 ms CreateObjectMapping: 0.472670 ms MarkObjects: 36.762389 ms  DeleteObjects: 0.455195 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
