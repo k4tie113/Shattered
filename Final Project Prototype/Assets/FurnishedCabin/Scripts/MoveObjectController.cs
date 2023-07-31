@@ -14,6 +14,7 @@ public class MoveObjectController : MonoBehaviour
 	private bool playerEntered;
 	private bool showInteractMsg;
 	private GUIStyle guiStyle;
+	private GUIStyle textStyle;
 	private string msg;
 
 	private int rayLayerMask; 
@@ -83,7 +84,7 @@ public class MoveObjectController : MonoBehaviour
 					return;
 				}
 					
-				if (moveableObject != null)		//hit object must have MoveableDraw script attached
+				if (moveableObject != null && anim!=null)		//hit object must have MoveableDraw script attached
 				{
 					showInteractMsg = true;
 					string animBoolNameNum = animBoolName + moveableObject.objectNumber.ToString();
@@ -91,7 +92,7 @@ public class MoveObjectController : MonoBehaviour
 					bool isOpen = anim.GetBool(animBoolNameNum);	//need current state for message.
 					msg = getGuiMsg(isOpen);
 
-					if (Input.GetKeyUp(KeyCode.E) || Input.GetButtonDown("Fire1"))
+					if (Input.GetKeyUp(KeyCode.E))
 					{
 						anim.enabled = true;
 						anim.SetBool(animBoolNameNum,!isOpen);
@@ -155,6 +156,11 @@ public class MoveObjectController : MonoBehaviour
 		guiStyle.fontStyle = FontStyle.Bold;
 		guiStyle.normal.textColor = Color.white;
 		msg = "[E] to Open";
+
+		textStyle = new GUIStyle();
+		textStyle.fontSize = 16;
+		textStyle.fontStyle = FontStyle.Italic;
+		textStyle.normal.textColor = Color.yellow;
 	}
 
 	private string getGuiMsg(bool isOpen)
@@ -175,7 +181,7 @@ public class MoveObjectController : MonoBehaviour
 	{
 		if (showInteractMsg)  //show on-screen prompts to user for guide.
 		{
-			GUI.Label(new Rect (50,Screen.height - 50,200,50), msg,guiStyle);
+			GUI.Label(new Rect (50,Screen.height - 100,200,50), msg,guiStyle);
 		}
 	}		
 	//End of GUI Config --------------
