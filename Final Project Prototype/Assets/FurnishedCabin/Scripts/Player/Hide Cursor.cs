@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class HideCursor : MonoBehaviour
 {
+   
+
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+
+       Cursor.lockState = CursorLockMode.Confined;
+       Cursor.lockState = CursorLockMode.Locked;
     }
-    
 }

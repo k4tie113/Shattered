@@ -11,17 +11,32 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float movementSpeed = 2f;
 
     private CharacterController charController;
-
+    Camera cam;
     private void Awake()
     {
         charController = GetComponent<CharacterController>();
     }
-
+    void Start(){
+        cam = Camera.main;
+    }
     private void Update()
     {
         PlayerMovement();
+        if (Input.GetMouseButtonDown(1))
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit, 100))
+            {
+                Interactable interactable =  hit.collider.GetComponent<Interactable>();
+                if(interactable != null)
+                {
+                    Debug.Log("hit"+hit.collider.name);
+                }
+            }
+        }
     }
-
+    
     private void PlayerMovement()
     {
         float vertInput = Input.GetAxis(verticalInputName) * movementSpeed;     //CharacterController.SimpleMove() applies deltaTime
