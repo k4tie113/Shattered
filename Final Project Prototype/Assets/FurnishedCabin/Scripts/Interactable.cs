@@ -9,6 +9,7 @@ public class Interactable : MonoBehaviour
     public bool hasInteracted;
     public bool isInteracting;
     public bool canDisplayText;
+    public bool invoking;
     public bool tooFar;
     public string displayMsg;
     private GUIStyle textStyle;
@@ -16,10 +17,10 @@ public class Interactable : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        invoking = false;
         tooFar = false;
         hasInteracted = false;
         canDisplayText = false;
-        displayMsg = "Interacting";
         textStyle = new GUIStyle();
 		textStyle.fontSize = 16;
 		textStyle.fontStyle = FontStyle.Italic;
@@ -34,18 +35,25 @@ public class Interactable : MonoBehaviour
         Debug.Log(canDisplayText);
         if(distance>radius)
         {
-            Invoke("TextCooldown", 1f);
+            if(!invoking){
+                Invoke("TextCooldown", 1f);
+                invoking = true;
+            }
             tooFar = true;
         }
         else
         {
-            Invoke("TextCooldown", msgTimer);
+            if(!invoking){
+                Invoke("TextCooldown", msgTimer);
+                invoking = true;
+            }
             Interact();
             isInteracting = true;
             hasInteracted = true;
         }
 
     }
+
     public virtual void Interact()
     {
         Debug.Log("interacting with "+transform.name);
@@ -65,6 +73,7 @@ public class Interactable : MonoBehaviour
     }
     void TextCooldown()
     {
+        invoking = false;
         canDisplayText = false;
     }
 }
