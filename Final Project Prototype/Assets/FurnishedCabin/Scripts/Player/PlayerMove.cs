@@ -31,7 +31,7 @@ public class PlayerMove : MonoBehaviour
                 Interactable interactable =  hit.collider.GetComponent<Interactable>();
                 if(interactable != null)
                 {
-                    Debug.Log("hit"+hit.collider.name);
+                    interactable.hit(transform);
                 }
             }
         }
