@@ -28,15 +28,17 @@ public class Interactable : MonoBehaviour
     }
     public void hit(Transform playerPOS)
     {
+        if(GUIManager.isInteracting) return;
         player = playerPOS;
         tooFar = false;
         float distance = Vector3.Distance(player.position, transform.position);
         if(!canDisplayText) canDisplayText = true;
-        Debug.Log(canDisplayText);
+        
         if(distance>radius)
         {
-            if(!invoking){
+            if(!invoking){ 
                 Invoke("TextCooldown", 1f);
+                GUIManager.isInteracting = true;
                 invoking = true;
             }
             tooFar = true;
@@ -45,10 +47,10 @@ public class Interactable : MonoBehaviour
         {
             if(!invoking){
                 Invoke("TextCooldown", msgTimer);
+                GUIManager.isInteracting = true;
                 invoking = true;
             }
             Interact();
-            isInteracting = true;
             hasInteracted = true;
         }
 
@@ -56,7 +58,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log("interacting with "+transform.name);
+        //Debug.Log("interacting with "+transform.name);
     }
 
     void OnGUI()
@@ -75,5 +77,9 @@ public class Interactable : MonoBehaviour
     {
         invoking = false;
         canDisplayText = false;
+        GUIManager.isInteracting = false;
+        isInteracting = false;
     }
+
+    
 }
