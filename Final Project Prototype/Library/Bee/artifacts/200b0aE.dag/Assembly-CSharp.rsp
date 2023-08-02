@@ -359,6 +359,7 @@
 "Assets/FurnishedCabin/Scripts/GUIManager.cs"
 "Assets/FurnishedCabin/Scripts/ImageInteract.cs"
 "Assets/FurnishedCabin/Scripts/Interactable.cs"
+"Assets/FurnishedCabin/Scripts/JournalInteract.cs"
 "Assets/FurnishedCabin/Scripts/MoveableObject.cs"
 "Assets/FurnishedCabin/Scripts/MoveObjectController.cs"
 "Assets/FurnishedCabin/Scripts/Player/Hide Cursor.cs"

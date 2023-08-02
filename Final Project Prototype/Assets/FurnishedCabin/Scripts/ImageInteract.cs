@@ -30,8 +30,9 @@ public class ImageInteract : Interactable
       noteCanvas.SetActive(false);
       GUIManager.canMove = true;
    }
-   void OnGUI()
+   public override void OnGUI()
    {
+      base.OnGUI();
       if(isOpen)
       {
          GUI.Label(new Rect (Screen.width * 0.6f,Screen.height*0.8f,200,50), "[E] to put down",guiStyle);

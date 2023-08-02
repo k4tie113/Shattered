@@ -55,10 +55,10 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        //Debug.Log("interacting with "+transform.name);
+        Debug.Log("interacting with "+transform.name);
     }
 
-    void OnGUI()
+    public virtual void OnGUI()
     {
         if(!canDisplayText) return;
         if(tooFar)
