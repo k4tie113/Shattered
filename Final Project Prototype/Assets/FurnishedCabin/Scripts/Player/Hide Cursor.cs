@@ -20,7 +20,7 @@ public class HideCursor : MonoBehaviour
     private void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(camera1.ViewportToWorldPoint(new Vector3(0.5f, 0.5f)), camera1.transform.forward, out hit, 3))
+        if (Physics.Raycast(camera1.ViewportToWorldPoint(new Vector3(0.5f, 0.5f)), camera1.transform.forward, out hit, 100))
         {
             Interactable interactable = hit.collider.GetComponent<Interactable>();
             if (interactable != null)

@@ -14,7 +14,6 @@ public class MoveObjectController : MonoBehaviour
 	private bool playerEntered;
 	private bool showInteractMsg;
 	private GUIStyle guiStyle;
-	private GUIStyle textStyle;
 	private string msg;
 
 	private int rayLayerMask; 
@@ -151,16 +150,10 @@ public class MoveObjectController : MonoBehaviour
 	//configure the style of the GUI
 	private void setupGui()
 	{
-		guiStyle = new GUIStyle();
-		guiStyle.fontSize = 16;
-		guiStyle.fontStyle = FontStyle.Bold;
-		guiStyle.normal.textColor = Color.white;
+		guiStyle = FontManager.guiStyle;
 		msg = "[E] to Open";
 
-		textStyle = new GUIStyle();
-		textStyle.fontSize = 16;
-		textStyle.fontStyle = FontStyle.Italic;
-		textStyle.normal.textColor = Color.yellow;
+		
 	}
 
 	private string getGuiMsg(bool isOpen)
@@ -181,7 +174,7 @@ public class MoveObjectController : MonoBehaviour
 	{
 		if (showInteractMsg)  //show on-screen prompts to user for guide.
 		{
-			GUI.Label(new Rect (50,Screen.height - 100,200,50), msg,guiStyle);
+			GUI.Label(new Rect (25,Screen.height*0.8f,200,50), msg,guiStyle);
 		}
 	}		
 	//End of GUI Config --------------

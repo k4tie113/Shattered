@@ -21,10 +21,7 @@ public class Interactable : MonoBehaviour
         tooFar = false;
         hasInteracted = false;
         canDisplayText = false;
-        textStyle = new GUIStyle();
-		textStyle.fontSize = 16;
-		textStyle.fontStyle = FontStyle.Italic;
-		textStyle.normal.textColor = Color.yellow;
+        textStyle = FontManager.yellowStyle;
     }
     public void hit(Transform playerPOS)
     {
@@ -66,11 +63,11 @@ public class Interactable : MonoBehaviour
         if(!canDisplayText) return;
         if(tooFar)
         {
-            GUI.Label(new Rect (50,Screen.height - 50,200,50), "walk closer to interact",textStyle);
+            GUI.Label(new Rect (25,Screen.height*0.9f,200,50), "walk closer to interact",textStyle);
         }
         else
         {
-            GUI.Label(new Rect (50,Screen.height - 50,200,50), displayMsg,textStyle);
+            GUI.Label(new Rect (25,Screen.height*0.9f,200,50), displayMsg,textStyle);
         }
     }
     void TextCooldown()
