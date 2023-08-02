@@ -1080,7 +1080,7 @@ GameObject:
   - component: {fileID: 132157689}
   - component: {fileID: 132157688}
   m_Layer: 0
-  m_Name: RawImage
+  m_Name: dot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1150,7 +1150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 132332108}
   m_Layer: 0
-  m_Name: Inventory items
+  m_Name: Important Items
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8497,7 +8497,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1278754075}
     m_Modifications:
     - target: {fileID: 1814085079043550, guid: 5610a49d552a2d24591c1f02a36f6c22, type: 3}
       propertyPath: m_Name
@@ -9550,6 +9550,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4000012514763842, guid: ba124179af6a3a7469f127358241673d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 652015592}
+    - targetCorrespondingSourceObject: {fileID: 4000012514763842, guid: ba124179af6a3a7469f127358241673d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2046782998}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba124179af6a3a7469f127358241673d, type: 3}
 --- !u!1 &1090003888
@@ -12440,6 +12443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1540335296}
+  - component: {fileID: 1540335297}
   m_Layer: 0
   m_Name: Photo
   m_TagString: Untagged
@@ -12463,6 +12467,26 @@ Transform:
   - {fileID: 1163980091}
   m_Father: {fileID: 132332108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1540335297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540335295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb7af723b3f94e1c9a4033d6d48f101, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  msgTimer: 3
+  hasInteracted: 0
+  isInteracting: 0
+  canDisplayText: 0
+  invoking: 0
+  tooFar: 0
+  displayMsg: what's this photo?
 --- !u!1 &1540806619
 GameObject:
   m_ObjectHideFlags: 0
@@ -16345,6 +16369,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025819350}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2046782998 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4810506076640630, guid: 5610a49d552a2d24591c1f02a36f6c22, type: 3}
+  m_PrefabInstance: {fileID: 912708501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053824744
 GameObject:
   m_ObjectHideFlags: 0
@@ -17395,14 +17424,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2271036430514701901, guid: d512ebcdf02532446b58dc05fc0f10d2, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2271036429879105432}
+      addedObject: {fileID: 2271036429879105429}
   m_SourcePrefab: {fileID: 100100000, guid: d512ebcdf02532446b58dc05fc0f10d2, type: 3}
 --- !u!4 &2271036429879105428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2271036430514701900, guid: d512ebcdf02532446b58dc05fc0f10d2, type: 3}
   m_PrefabInstance: {fileID: 2271036429879105427}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2271036429879105432
+--- !u!114 &2271036429879105429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17414,6 +17443,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5918442423fae4d718d21006c6eb8a4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crosshair: {fileID: 132157688}
+  whiteCrosshair: {fileID: 2100000, guid: c1381cff5e8884685b4b29941e217934, type: 2}
+  redCrosshair: {fileID: 2100000, guid: 5a4a105cc79c54017b7cad82bfac9ea9, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -17422,5 +17454,4 @@ SceneRoots:
   - {fileID: 1063491186}
   - {fileID: 2271036429879105427}
   - {fileID: 1208883405}
-  - {fileID: 912708501}
   - {fileID: 132332108}

@@ -21,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     }
     private void Update()
     {
+        if(!GUIManager.canMove) return;
         PlayerMovement();
         if (Input.GetMouseButtonDown(1))
         {
