@@ -368,6 +368,7 @@
 "Assets/FurnishedCabin/Scripts/Player/PlayerMove.cs"
 "Assets/IgniteCoders/Simple Water Shader/Info/Scripts/Readme.cs"
 "Assets/IgniteCoders/Simple Water Shader/Resources/WaterReflection.cs"
+"Assets/Other/Menu.cs"
 "Assets/Starfield Skybox/Demo/Script/LookCamera.cs"
 -langversion:9.0
 
