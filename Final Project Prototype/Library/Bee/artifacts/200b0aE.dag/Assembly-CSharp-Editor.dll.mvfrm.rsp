@@ -1,6 +1,8 @@
 Library/Bee/artifacts/mvdfrm/Unity.EditorCoroutines.Editor.ref.dll_728C78151872B5E7.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.Performance.Profile-Analyzer.Editor.ref.dll_C3EE3B81D8CE5737.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.PlasticSCM.Editor.ref.dll_CBF917C274624EE2.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Postprocessing.Editor.ref.dll_AD00340600BDBD7C.mvfrm
+Library/Bee/artifacts/mvdfrm/Unity.Postprocessing.Runtime.ref.dll_9835F86260E556EF.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.ProBuilder.AddOns.Editor.ref.dll_8D0FF91D4B7853DA.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.ProBuilder.AssetIdRemapUtility.ref.dll_EE877D84CB49D950.mvfrm
 Library/Bee/artifacts/mvdfrm/Unity.ProBuilder.Editor.ref.dll_8A2D4E048EA34101.mvfrm
@@ -27,7 +29,6 @@ Library/Bee/artifacts/mvdfrm/UnityEditor.TestRunner.ref.dll_DE1D13444BAAFBE7.mvf
 Library/Bee/artifacts/mvdfrm/UnityEditor.UI.ref.dll_BD0E97F52A0DF729.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEngine.TestRunner.ref.dll_AA3B5DF2776E59D2.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEngine.UI.ref.dll_79746E5030301F94.mvfrm
-Library/Bee/artifacts/mvdfrm/UnityEditor.WebGL.Extensions.dll_4F0FEE60D974D872.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_0502039DA03F624C.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_4235E9F0CCCF721A.mvfrm
 Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_90D2A877E7B76CC7.mvfrm

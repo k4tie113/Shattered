@@ -50,7 +50,7 @@ public class JournalInteract : Interactable
       if(isOpen)
       {
          GUI.Label(new Rect (Screen.width * 0.7f,Screen.height*0.8f,200,50), "[E] to put down",guiStyle);
-         if(index<8) GUI.Label(new Rect (Screen.width * 0.1f,Screen.height*0.8f,200,50), "[SPACE] for next page",guiStyle);
+         if(index<7) GUI.Label(new Rect (Screen.width * 0.1f,Screen.height*0.8f,200,50), "[SPACE] for next page",guiStyle);
       }
    }
    private void Update()
@@ -61,7 +61,7 @@ public class JournalInteract : Interactable
          {
             DisableNote();
          }
-         else if(Input.GetKeyDown(KeyCode.Space))
+         else if(index < 7 && Input.GetKeyDown(KeyCode.Space))
          {
             index++;
             noteText.text = texts[index];
