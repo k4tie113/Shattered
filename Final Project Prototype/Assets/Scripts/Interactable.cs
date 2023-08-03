@@ -8,11 +8,13 @@ public class Interactable : MonoBehaviour
     public float msgTimer = 3f;
     public bool hasInteracted;
     public bool isInteracting;
-    public bool canDisplayText;
+    private bool canDisplayText;
     public bool invoking;
-    public bool tooFar;
+    private bool tooFar;
     public string displayMsg;
+    public int value = 0;
     private GUIStyle textStyle;
+
     Transform player;
     // Start is called before the first frame update
     void Start()
@@ -55,6 +57,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
+        if(!hasInteracted) GUIManager.memory += value;
         Debug.Log("interacting with "+transform.name);
     }
 

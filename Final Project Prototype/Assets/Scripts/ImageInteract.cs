@@ -21,14 +21,14 @@ public class ImageInteract : Interactable
    public void ShowNote()
    {
       isOpen = true;
-      GUIManager.canMove = false;
+      GUIManager.actionsEnabled = false;
       noteCanvas.SetActive(true);
    }
    void DisableNote()
    {
       isOpen = false;
       noteCanvas.SetActive(false);
-      GUIManager.canMove = true;
+      GUIManager.actionsEnabled = true;
    }
    public override void OnGUI()
    {

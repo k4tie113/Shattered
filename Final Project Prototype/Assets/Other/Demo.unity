@@ -428,10 +428,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: 
+  value: 0
   xChange: -0.15
   yChange: 0
   zChange: -0.32
@@ -1297,7 +1296,6 @@ Transform:
   - {fileID: 289974220}
   - {fileID: 283673392}
   - {fileID: 1726159820}
-  - {fileID: 1886062845}
   - {fileID: 1100262582}
   - {fileID: 301485619}
   - {fileID: 939708072}
@@ -1967,12 +1965,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208806534}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -4.53, y: 0.120125294, z: -1.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1278754075}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!64 &208806538
 MeshCollider:
@@ -2416,10 +2414,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: interesting painting
+  value: 0
 --- !u!1001 &245092711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3562,10 +3559,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: this must be a journal.
+  value: 100
   noteCanvas: {fileID: 543226868}
   noteText: {fileID: 470027820}
   texts: []
@@ -4294,10 +4290,9 @@ MonoBehaviour:
   msgTimer: 1.5
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: a dead rat. thats disgusting
+  value: 0
 --- !u!65 &333901057
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6089,10 +6084,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: i've definitely been to this graveyard
+  value: 10
   noteCanvas: {fileID: 354805989}
 --- !u!1 &503281011
 GameObject:
@@ -11025,6 +11019,52 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 950979297}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &965003062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 965003064}
+  - component: {fileID: 965003063}
+  m_Layer: 0
+  m_Name: StoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &965003063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965003062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b0b72138f60a461ea67d6546e15525a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayMsg: 
+  displaying: 0
+--- !u!4 &965003064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 965003062}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.951829, y: -2.7751932, z: -1.4393988}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &966880193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11151,10 +11191,9 @@ MonoBehaviour:
   msgTimer: 1.5
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: 'obtained: CHEST KEY'
+  value: 0
 --- !u!1 &969945967
 GameObject:
   m_ObjectHideFlags: 0
@@ -11386,10 +11425,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: whoever drew these must be a really good artist
+  value: 0
 --- !u!1 &1003271227 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100026, guid: 9eb4d689eea78e54da10689d7d578cef, type: 3}
@@ -11575,10 +11613,9 @@ MonoBehaviour:
   msgTimer: 4
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: someone was studying memory loss in children
+  value: 10
   noteCanvas: {fileID: 1682004233}
 --- !u!1 &1060975071
 GameObject:
@@ -11896,6 +11933,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4000012514763842, guid: ba124179af6a3a7469f127358241673d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 333901054}
+    - targetCorrespondingSourceObject: {fileID: 4000012514763842, guid: ba124179af6a3a7469f127358241673d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 208806537}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1000011832338026, guid: ba124179af6a3a7469f127358241673d, type: 3}
       insertIndex: -1
@@ -11943,10 +11983,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: can't seem to open the window
+  value: 0
 --- !u!65 &1063491195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12005,10 +12044,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: time slowly ticks on
+  value: 0
   xChange: 0.5
   yChange: 0
   zChange: -0.5
@@ -12139,10 +12177,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: can't open a single window in here
+  value: 0
 --- !u!65 &1092526494
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12463,10 +12500,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: broken mirror...i'll keep away from that
+  value: 0
   xChange: -0.5
   yChange: 0
   zChange: -0.5
@@ -12654,10 +12690,9 @@ MonoBehaviour:
   msgTimer: 5
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: is this a doctor's prescription?
+  value: 0
   noteCanvas: {fileID: 1929683689}
   noteText: {fileID: 1230142523}
   texts: []
@@ -13502,10 +13537,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: a dirty cardboard box with my old toys
+  value: 0
 --- !u!1 &1208883402
 GameObject:
   m_ObjectHideFlags: 0
@@ -13750,10 +13784,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: dirty sink
+  value: 0
 --- !u!1 &1232890474
 GameObject:
   m_ObjectHideFlags: 0
@@ -14232,10 +14265,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: i must have been very fond of stuffed animals
+  value: 0
   xChange: -0.2
   yChange: 0.02
   zChange: -0.4
@@ -14366,10 +14398,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: a 70s record player
+  value: 0
 --- !u!64 &1302457967
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14413,10 +14444,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: these windows are blocked off
+  value: 0
 --- !u!65 &1303879744
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15335,10 +15365,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: looks like a happy family.. 2 daughters, one son
+  value: 0
 --- !u!1 &1445598731
 GameObject:
   m_ObjectHideFlags: 0
@@ -16000,10 +16029,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: a delicate little music box
+  value: 0
 --- !u!64 &1507543296
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16287,10 +16315,9 @@ MonoBehaviour:
   msgTimer: 5
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
-  displayMsg: what's this photo? "olivia"... that's me.
+  displayMsg: 
+  value: 20
   noteCanvas: {fileID: 341756924}
 --- !u!33 &1540335300
 MeshFilter:
@@ -17003,10 +17030,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: 'obtained: MOM & DAD''s WEDDING RINGS'
+  value: 500
 --- !u!4 &1568453774 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8013554506208658812, guid: 8113578f9fdb744f88530b4ce965df59, type: 3}
@@ -17467,10 +17493,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: this must be my old piano. the keys are out of tune
+  value: 0
 --- !u!1 &1665894574
 GameObject:
   m_ObjectHideFlags: 0
@@ -17799,7 +17824,7 @@ LightingSettings:
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 0
-  m_BakeBackend: 2
+  m_BakeBackend: 1
   m_LightmapMaxSize: 1024
   m_BakeResolution: 30
   m_Padding: 2
@@ -18457,10 +18482,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: this chest is locked. need to find a key
+  value: 0
   openedChest: {fileID: 194445515}
 --- !u!1001 &1726159819
 PrefabInstance:
@@ -18920,10 +18944,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: dad always loved to reade
+  value: 0
 --- !u!1 &1771652773 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283557300780014, guid: 8149a178bc578f54daa640232d92bc07, type: 3}
@@ -19073,10 +19096,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: ...
+  value: 500
   noteCanvas: {fileID: 395383628}
 --- !u!1 &1793129185 stripped
 GameObject:
@@ -19099,10 +19121,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: why won't these windows open?
+  value: 0
 --- !u!65 &1793129191
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19870,192 +19891,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000013479888882, guid: 8573759d3a770094eb2998662fadeb64, type: 3}
   m_PrefabInstance: {fileID: 245092711}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1886062844
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 132332108}
-    m_Modifications:
-    - target: {fileID: 848717655872883218, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 6212e756228d3ac42a23d4024b2b118b, type: 2}
-    - target: {fileID: 859706173515774911, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 859706173515774911, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 859706173515774911, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 859706173515774911, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0005
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0005
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0005
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.046
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.045
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 2871554046939626854, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3016334610283461868, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_Name
-      value: Key
-      objectReference: {fileID: 0}
-    - target: {fileID: 3016334610283461868, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.2724538
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.0273364
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -6.1663256
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4687658193939008043, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      propertyPath: m_Name
-      value: actual key
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4687658193939008043, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1886062848}
-    - targetCorrespondingSourceObject: {fileID: 4687658193939008043, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1886062847}
-  m_SourcePrefab: {fileID: 100100000, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
---- !u!4 &1886062845 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3084620735334704350, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-  m_PrefabInstance: {fileID: 1886062844}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1886062846 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4687658193939008043, guid: ca7491a64e7ff4117bc8a1ec6c4dbd29, type: 3}
-  m_PrefabInstance: {fileID: 1886062844}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1886062847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886062846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 146850c8f2aa54ea79ab52cd039161a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 2
-  msgTimer: 1
-  hasInteracted: 0
-  isInteracting: 0
-  canDisplayText: 0
-  invoking: 0
-  tooFar: 0
-  displayMsg: 'obtained: KEY'
---- !u!65 &1886062848
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886062846}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.17832702, y: 0.37712106, z: 0.064356014}
-  m_Center: {x: -0.6, y: -0.15, z: -0.05}
 --- !u!1 &1894533942
 GameObject:
   m_ObjectHideFlags: 0
@@ -21076,10 +20911,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: that's my high school graduation
+  value: 10
   noteCanvas: {fileID: 1807660143}
 --- !u!1 &1960306899
 GameObject:
@@ -21411,10 +21245,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: some letters have faded over time
+  value: 20
   noteCanvas: {fileID: 2084847804}
 --- !u!1 &1995660647
 GameObject:
@@ -21761,10 +21594,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: a painting of a familiar house..
+  value: 0
 --- !u!1 &2010477827
 GameObject:
   m_ObjectHideFlags: 0
@@ -22496,10 +22328,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: a married couple?
+  value: 0
 --- !u!1 &2084847804
 GameObject:
   m_ObjectHideFlags: 0
@@ -22952,10 +22783,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: who is this girl?
+  value: 0
 --- !u!1 &2104858064
 GameObject:
   m_ObjectHideFlags: 0
@@ -23819,10 +23649,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: i wonder whats hiding under here
+  value: 0
   xChange: 0
   yChange: 0
   zChange: 0.3
@@ -24538,10 +24367,9 @@ MonoBehaviour:
   msgTimer: 2
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: cool, an old soviet televison
+  value: 0
 --- !u!205 &205032307292633751
 LODGroup:
   m_ObjectHideFlags: 0
@@ -25804,10 +25632,9 @@ MonoBehaviour:
   msgTimer: 3
   hasInteracted: 0
   isInteracting: 0
-  canDisplayText: 0
   invoking: 0
-  tooFar: 0
   displayMsg: fancy chair
+  value: 0
   xChange: -0.3
   yChange: 0
   zChange: 0.3
@@ -25933,4 +25760,4 @@ SceneRoots:
   - {fileID: 1544858084}
   - {fileID: 807632530}
   - {fileID: 1382154033}
-  - {fileID: 208806537}
+  - {fileID: 965003064}

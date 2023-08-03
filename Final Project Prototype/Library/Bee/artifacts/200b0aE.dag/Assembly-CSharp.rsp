@@ -381,6 +381,7 @@
 "Assets/Scripts/Player/PlayerMove.cs"
 "Assets/Scripts/PresInteract.cs"
 "Assets/Scripts/SpotlightFollow.cs"
+"Assets/Scripts/StoryManager.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserManager.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabBrowserWindow.cs"
 "Assets/Sketchfab For Unity/Scripts/AssetBrowser/SketchfabModelWindow.cs"
