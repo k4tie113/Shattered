@@ -2650,6 +2650,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7928212071687308781, guid: 8003d6e476b1142f580030eb6db39e31, type: 3}
       insertIndex: -1
       addedObject: {fileID: 744814382}
+    - targetCorrespondingSourceObject: {fileID: -7928212071687308781, guid: 8003d6e476b1142f580030eb6db39e31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 744814385}
   m_SourcePrefab: {fileID: 100100000, guid: 8003d6e476b1142f580030eb6db39e31, type: 3}
 --- !u!4 &278946524 stripped
 Transform:
@@ -7831,6 +7834,26 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8588631502226672803, guid: 8003d6e476b1142f580030eb6db39e31, type: 3}
+--- !u!114 &744814385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744814379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967e12e7099fe49baa22cfcff1fbb2e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  msgTimer: 3
+  hasInteracted: 0
+  isInteracting: 0
+  canDisplayText: 0
+  invoking: 0
+  tooFar: 0
+  displayMsg: time slowly ticks on
 --- !u!1 &757822549
 GameObject:
   m_ObjectHideFlags: 0
@@ -18716,8 +18739,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2, y: 0.5, z: 0.3204188}
-  m_Center: {x: 0.013658719, y: 0.016808135, z: -0.036134236}
+  m_Size: {x: 0.3151469, y: 0.5436502, z: 0.46540946}
+  m_Center: {x: 0.07, y: 0, z: 0}
 --- !u!23 &1957494852
 MeshRenderer:
   m_ObjectHideFlags: 0

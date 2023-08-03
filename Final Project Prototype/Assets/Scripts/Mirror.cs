@@ -18,7 +18,7 @@ public class Mirror : Interactable
     }
     void Update()
     {
-        if(GUIManager.keyEnabled) displayMsg = "perhaps the broken glass was placed there for a reason";
+        if(GUIManager.keyEnabled) displayMsg = "this must be the mirror mom shattered";
         if(invoking && !moved && GUIManager.keyEnabled && Input.GetKeyDown(KeyCode.E))
         {
             transform.position += new Vector3(xChange, yChange, zChange);

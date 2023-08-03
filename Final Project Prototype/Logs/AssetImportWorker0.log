@@ -2,9 +2,9 @@ Unity Editor version:    2022.3.5f1 (9674261d40ee)
 Branch:                  2022.3/release
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 13.4.1 (c) (Build 22F770820d)
-Darwin version:          22.5.0
-Architecture:            arm64
+macOS version:           Version 11.1 (Build 20C69)
+Darwin version:          20.2.0
+Architecture:            x86_64
 Running under Rosetta:   NO
 Available memory:        8192 MB
 Using pre-set license
@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/ga_eun/Documents/Unity Games/Final Project Prototype
+/Users/katieli/Documents/GitHub/Shattered/Final Project Prototype
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51921
-Successfully changed project path to: /Users/ga_eun/Documents/Unity Games/Final Project Prototype
-/Users/ga_eun/Documents/Unity Games/Final Project Prototype
+51999
+Successfully changed project path to: /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype
+/Users/katieli/Documents/GitHub/Shattered/Final Project Prototype
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,65 +56,63 @@ Successfully changed project path to: /Users/ga_eun/Documents/Unity Games/Final 
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8484281856] Host "[IP] 169.233.162.220 [Port] 0 [Flags] 2 [Guid] 3472153772 [EditorId] 3472153772 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-162-220.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [4787138048] Host "[IP] 169.233.174.202 [Port] 0 [Flags] 2 [Guid] 3795811497 [EditorId] 3795811497 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-174-202.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8484281856] Host "[IP] 169.233.162.220 [Port] 0 [Flags] 2 [Guid] 3472153772 [EditorId] 3472153772 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-162-220.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4787138048] Host "[IP] 169.233.174.202 [Port] 0 [Flags] 2 [Guid] 3795811497 [EditorId] 3795811497 [Version] 1048832 [Id] OSXEditor(0,eduroam-169-233-174-202.ucsc.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 3.36 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 61.32 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/ga_eun/Documents/Unity Games/Final Project Prototype/Assets
+[Subsystems] Discovering subsystems at path /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
- preferred device: Apple M2 (high power)
+Color LCD preferred device: Intel(R) Iris(TM) Plus Graphics (low power)
 Metal devices available: 1
-0: Apple M2 (high power)
-Using device Apple M2 (high power)
-Initializing Metal device caps: Apple M2
+0: Intel(R) Iris(TM) Plus Graphics (low power)
+Using device Intel(R) Iris(TM) Plus Graphics (low power)
+Initializing Metal device caps: Intel(R) Iris(TM) Plus Graphics
 Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56413
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56883
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: /Applications/Unity/Hub/Editor/2022.3.5f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.002076 seconds.
-- Loaded All Assemblies, in  0.231 seconds
+Registered in 0.007799 seconds.
+- Loaded All Assemblies, in  2.328 seconds
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.136 seconds
-Domain Reload Profiling: 366ms
-	BeginReloadAssembly (79ms)
+- Finished resetting the current domain, in  1.774 seconds
+Domain Reload Profiling: 4102ms
+	BeginReloadAssembly (667ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (94ms)
-		LoadAssemblies (79ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (271ms)
+	RebuildNativeTypeToScriptingClass (61ms)
+	initialDomainReloadingComplete (321ms)
+	LoadAllAssembliesAndSetupDomain (1006ms)
+		LoadAssemblies (669ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (92ms)
-			TypeCache.Refresh (92ms)
-				TypeCache.ScanAssembly (83ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (136ms)
+		AnalyzeDomain (992ms)
+			TypeCache.Refresh (988ms)
+				TypeCache.ScanAssembly (915ms)
+			ScanForSourceGeneratedMonoScriptInfo (2ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (1776ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (101ms)
+		SetupLoadedEditorAssemblies (1354ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (65ms)
+			SetLoadedEditorAssemblies (55ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (68ms)
-			ProcessInitializeOnLoadMethodAttributes (25ms)
+			BeforeProcessingInitializeOnLoad (18ms)
+			ProcessInitializeOnLoadAttributes (877ms)
+			ProcessInitializeOnLoadMethodAttributes (338ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -122,55 +120,54 @@ Domain Reload Profiling: 366ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/ga_eun/Documents/Unity Games/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/ga_eun/Documents/Unity Games/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.491 seconds
-Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
+Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/katieli/Documents/GitHub/Shattered/Final Project Prototype/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  3.726 seconds
+Refreshing native plugins compatible for Editor in 3.88 ms, found 2 plugins.
 Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.345 seconds
-Domain Reload Profiling: 837ms
-	BeginReloadAssembly (62ms)
+- Finished resetting the current domain, in  1.563 seconds
+Domain Reload Profiling: 5290ms
+	BeginReloadAssembly (976ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (54ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (381ms)
-		LoadAssemblies (216ms)
+		CreateAndSetChildDomain (130ms)
+	RebuildCommonClasses (167ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (129ms)
+	LoadAllAssembliesAndSetupDomain (2421ms)
+		LoadAssemblies (1614ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (186ms)
-			TypeCache.Refresh (176ms)
-				TypeCache.ScanAssembly (165ms)
-			ScanForSourceGeneratedMonoScriptInfo (8ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (345ms)
+		AnalyzeDomain (1286ms)
+			TypeCache.Refresh (1224ms)
+				TypeCache.ScanAssembly (1176ms)
+			ScanForSourceGeneratedMonoScriptInfo (48ms)
+			ResolveRequiredComponents (15ms)
+	FinalizeReload (1565ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (263ms)
+		SetupLoadedEditorAssemblies (1122ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (2ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (28ms)
-			ProcessInitializeOnLoadAttributes (222ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			BeforeProcessingInitializeOnLoad (135ms)
+			ProcessInitializeOnLoadAttributes (884ms)
+			ProcessInitializeOnLoadMethodAttributes (75ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.5f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.18 seconds
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.17 seconds
+Refreshing native plugins compatible for Editor in 3.06 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3627 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 52 unused Assets / (1.3 MB). Loaded Objects now: 4115.
-Memory consumption went from 251.2 MB to 249.9 MB.
-Total: 7.707750 ms (FindLiveObjects: 0.206250 ms CreateObjectMapping: 0.063958 ms MarkObjects: 5.808750 ms  DeleteObjects: 1.628208 ms)
+Memory consumption went from 375.2 MB to 373.9 MB.
+Total: 12.405328 ms (FindLiveObjects: 0.970672 ms CreateObjectMapping: 0.372792 ms MarkObjects: 9.290871 ms  DeleteObjects: 1.768758 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -186,9 +183,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 40248.699552 seconds.
-  path: Assets/Other/Demo.unity
-  artifactKey: Guid(0bce5907d797a4cd8b0660dc119867e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Other/Demo.unity using Guid(0bce5907d797a4cd8b0660dc119867e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713e6575211ef4b28bfa248ec9c058ee') in 0.005402 seconds
+  Time since last request: 113671.875906 seconds.
+  path: Assets/Scripts/Mirror.cs
+  artifactKey: Guid(d185c835d3bd047699dd16e09c057bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Mirror.cs using Guid(d185c835d3bd047699dd16e09c057bd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba164c28b1dddfe5ae5088d21ba2bc5e') in 0.005442 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
