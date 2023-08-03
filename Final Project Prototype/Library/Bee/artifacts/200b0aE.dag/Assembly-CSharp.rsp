@@ -366,6 +366,7 @@
 "Assets/KeyScript.cs"
 "Assets/Other/Instructions.cs"
 "Assets/Other/Menu.cs"
+"Assets/Other/Warning.cs"
 "Assets/Scripts/Chest.cs"
 "Assets/Scripts/FontManager.cs"
 "Assets/Scripts/GUIManager.cs"
