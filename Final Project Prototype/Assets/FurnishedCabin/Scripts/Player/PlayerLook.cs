@@ -7,7 +7,8 @@ public class PlayerLook : MonoBehaviour
     [SerializeField] private string mouseXInputName = "Mouse X";
     [SerializeField] private string mouseYInputName = "Mouse Y";
     [SerializeField] private float mouseSensitivity = 150f;
-
+    //[SerializeField] public GameObject flashlight; // Reference to the flashlight GameObject
+    public Vector3 flashlightOffset = new Vector3(0f, 0f, 0f); // Adjust the offset values
     [SerializeField] private Transform playerBody;
     private float xAxisClamp;
 
@@ -19,6 +20,10 @@ public class PlayerLook : MonoBehaviour
     private void Update()
     {
         CameraRotation();
+        //flashlight.transform.position = transform.position + transform.TransformDirection(flashlightOffset);
+
+        // Update flashlight rotation to match the camera's rotation
+        //flashlight.transform.rotation = transform.rotation;
     }
 
     private void CameraRotation()

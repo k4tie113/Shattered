@@ -369,6 +369,7 @@
 "Assets/FurnishedCabin/Scripts/Player/Hide Cursor.cs"
 "Assets/FurnishedCabin/Scripts/Player/PlayerLook.cs"
 "Assets/FurnishedCabin/Scripts/Player/PlayerMove.cs"
+"Assets/FurnishedCabin/Scripts/PresInteract.cs"
 "Assets/FurnishedCabin/Scripts/SpotlightFollow.cs"
 "Assets/IgniteCoders/Simple Water Shader/Info/Scripts/Readme.cs"
 "Assets/IgniteCoders/Simple Water Shader/Resources/WaterReflection.cs"
