@@ -65,7 +65,6 @@ public class JournalInteract : Interactable
          {
             index++;
             noteText.text = texts[index];
-            if(index==6) GUIManager.keyEnabled = true;
          } //get space keycode
       }
    }

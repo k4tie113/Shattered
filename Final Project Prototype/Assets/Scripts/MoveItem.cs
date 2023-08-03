@@ -6,7 +6,7 @@ public class MoveItem : Interactable
 {
     public float xChange, yChange, zChange;
     GUIStyle guiStyle;
-    bool moved = false;
+    public bool moved = false;
     public override void Interact()
     {
         guiStyle = FontManager.guiStyle;
