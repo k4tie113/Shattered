@@ -180,12 +180,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You are about to wake up in an empty house, left with no type of any memory.
+  m_text: 'You are about to wake up in an abandoned house, left with no type of any
+    memory.
 
 
-    It
-    is now your job to discover the mystery the house holds by interacting with different
-    objects. Gain clues and figure out the story that you have forgotten.
+    It is now your job to discover the mystery the house holds by interacting
+    with different objects. Gain clues and figure out the story that you have forgotten.
 
 
     Click
