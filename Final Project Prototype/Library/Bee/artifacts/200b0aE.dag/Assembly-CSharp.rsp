@@ -377,6 +377,7 @@
 "Assets/Scripts/MoveableObject.cs"
 "Assets/Scripts/MoveItem.cs"
 "Assets/Scripts/MoveObjectController.cs"
+"Assets/Scripts/Player/Footsteps.cs"
 "Assets/Scripts/Player/Hide Cursor.cs"
 "Assets/Scripts/Player/PlayerLook.cs"
 "Assets/Scripts/Player/PlayerMove.cs"
