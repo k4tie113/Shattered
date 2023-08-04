@@ -21,7 +21,6 @@ public class MoveObjectController : MonoBehaviour
 	private int rayLayerMask; 
 
 	public int minMemory;
-
 	void Start()
 	{
 		//Initialize moveDrawController if script is enabled.

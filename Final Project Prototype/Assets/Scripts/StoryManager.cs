@@ -18,7 +18,7 @@ public class StoryManager:MonoBehaviour
         GUI.Label(new Rect (25,Screen.height*0.9f,200,50), displayMsg,style);
     }
 
-    void displayMessage(string msg, float sec)
+    public void displayMessage(string msg, float sec)
     {
         GUIManager.isInteracting = true;
         Debug.Log("displaying: "+msg);
@@ -42,7 +42,7 @@ public class StoryManager:MonoBehaviour
     void Update()
     {
         Debug.Log(GUIManager.memory);
-        if(GUIManager.memory>=1160)
+        if(GUIManager.memory>=1180)
         {
             GUIManager.memory = -1000;
             StartCoroutine(Ending());  
@@ -50,13 +50,17 @@ public class StoryManager:MonoBehaviour
     }
     IEnumerator Ending()
     {
-        displayMessage("My memories of Jessica are flooding back.. ", 3f);
+        yield return new WaitForSeconds(4f);
+        displayMessage("I've always had the feeling that something was missing from my life.", 4f);
+        yield return new WaitForSeconds(4f);
+        displayMessage("My memories of her are flooding back.. ", 3f);
         yield return new WaitForSeconds(3.0f);
         displayMessage("I remember my sister now. Jessica.", 3f);
         yield return new WaitForSeconds(3.0f);
         displayMessage("After all these years, I finally know the truth.", 3f);
         yield return new WaitForSeconds(3.0f);
         displayMessage("I've been freed. It's time to go back.", 5f);
+        yield return new WaitForSeconds(5.0f);
         end();
     }
     IEnumerator ExecuteWithDelay()

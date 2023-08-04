@@ -17,9 +17,9 @@ public class Chest : Interactable
         GUIManager.keyEnabled = true;
         if(GUIManager.gotKey)
         {
-            if(GUIManager.memory<160)
+            if(GUIManager.memory<180)
             {
-                story.askToLook();
+                displayMsg = "maybe i should look around some more before i open this";
                 return;
             }
             openedChest.SetActive(true);

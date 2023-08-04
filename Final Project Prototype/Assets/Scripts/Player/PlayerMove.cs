@@ -23,7 +23,7 @@ public class PlayerMove : MonoBehaviour
     {
         if(!GUIManager.actionsEnabled) return;
         PlayerMovement();
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
@@ -36,10 +36,7 @@ public class PlayerMove : MonoBehaviour
                 }
             }
         }
-        if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.E)) || (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.E)))
-        {
-
-        }
+        
     }
     
     private void PlayerMovement()

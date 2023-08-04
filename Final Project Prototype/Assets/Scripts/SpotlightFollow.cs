@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpotlightFollow : MonoBehaviour
 {
     public GameObject flashlight;
-
+    public AudioSource click;
     //public AudioSource turnOn;
     //public AudioSource turnOff;
 
@@ -33,6 +33,7 @@ public class SpotlightFollow : MonoBehaviour
         if(!GUIManager.actionsEnabled) return;
         if(Input.GetKeyDown(KeyCode.F))
         {
+            click.Play();
             state = !state;
             flashlight.SetActive(state);
             
