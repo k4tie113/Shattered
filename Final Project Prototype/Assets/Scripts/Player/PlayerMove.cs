@@ -23,7 +23,7 @@ public class PlayerMove : MonoBehaviour
     {
         if(!GUIManager.actionsEnabled) return;
         PlayerMovement();
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

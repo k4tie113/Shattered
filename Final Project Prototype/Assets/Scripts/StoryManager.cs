@@ -41,6 +41,7 @@ public class StoryManager:MonoBehaviour
     }
     void Update()
     {
+        Debug.Log(GUIManager.memory);
         if(GUIManager.memory>=1160)
         {
             GUIManager.memory = -1000;
