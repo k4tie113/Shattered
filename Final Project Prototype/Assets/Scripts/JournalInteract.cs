@@ -64,6 +64,7 @@ public class JournalInteract : Interactable
          else if(index < 7 && Input.GetKeyDown(KeyCode.Space))
          {
             index++;
+            interactAudio.Play();
             noteText.text = texts[index];
          } //get space keycode
       }

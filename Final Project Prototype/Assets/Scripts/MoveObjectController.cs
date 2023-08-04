@@ -16,8 +16,11 @@ public class MoveObjectController : MonoBehaviour
 	private GUIStyle guiStyle;
 	private string msg;
 
+	public AudioSource audio;
+	public StoryManager story;
 	private int rayLayerMask; 
 
+	public int minMemory;
 
 	void Start()
 	{
@@ -66,7 +69,7 @@ public class MoveObjectController : MonoBehaviour
 
 	void Update()
 	{		
-		if (playerEntered)
+		if (playerEntered && !GUIManager.isInteracting)
 		{	
 
 			//center point of viewport in World space.
@@ -93,7 +96,13 @@ public class MoveObjectController : MonoBehaviour
 
 					if (Input.GetKeyUp(KeyCode.E))
 					{
+						if(GUIManager.memory<minMemory)
+						{
+							story.backOff();
+							return;
+						}
 						anim.enabled = true;
+						audio.Play();
 						anim.SetBool(animBoolNameNum,!isOpen);
 						msg = getGuiMsg(!isOpen);
 					}

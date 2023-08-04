@@ -36,6 +36,10 @@ public class PlayerMove : MonoBehaviour
                 }
             }
         }
+        if((Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.E)) || (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.E)))
+        {
+
+        }
     }
     
     private void PlayerMovement()

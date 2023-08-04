@@ -61,6 +61,7 @@ public class PresInteract : Interactable
          else if(index < 3 && Input.GetKeyDown(KeyCode.Space))
          {
             index++;
+            interactAudio.Play();
             noteText.text = texts[index];
          } //get space keycode
       }

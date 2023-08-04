@@ -9,6 +9,7 @@ public class MoveItem : Interactable
     public bool moved = false;
     public override void Interact()
     {
+        base.Interact();
         guiStyle = FontManager.guiStyle;
     }
     

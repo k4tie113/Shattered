@@ -10,6 +10,7 @@ public class Mirror : Interactable
     bool moved = false;
     public override void Interact()
     {
+        base.Interact();
         guiStyle = FontManager.guiStyle;
     }
     

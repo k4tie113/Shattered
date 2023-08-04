@@ -14,7 +14,7 @@ public class Interactable : MonoBehaviour
     public string displayMsg;
     public int value = 0;
     private GUIStyle textStyle;
-
+    public AudioSource interactAudio;
     Transform player;
     // Start is called before the first frame update
     void Start()
@@ -59,6 +59,7 @@ public class Interactable : MonoBehaviour
     {
         if(!hasInteracted) GUIManager.memory += value;
         Debug.Log("interacting with "+transform.name);
+        interactAudio.Play();
     }
 
     public virtual void OnGUI()
