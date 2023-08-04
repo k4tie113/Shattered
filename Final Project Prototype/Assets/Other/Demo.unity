@@ -8454,20 +8454,20 @@ Transform:
   m_GameObject: {fileID: 652015586}
   serializedVersion: 2
   m_LocalRotation: {x: -5.006087e-12, y: -4.3606967e-21, z: 8.710788e-10, w: 1}
-  m_LocalPosition: {x: -1.8542526, y: -0.3306258, z: 4.083779}
+  m_LocalPosition: {x: -4.72, y: 0.1203742, z: 5.42}
   m_LocalScale: {x: 1.4, y: 0.9, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1933920894}
   - {fileID: 1718835752}
-  - {fileID: 1507414435}
+  - {fileID: 2104858065}
   - {fileID: 843872146}
   - {fileID: 1833722358}
   - {fileID: 1459400571}
   - {fileID: 1616576121}
   - {fileID: 1200817688}
   - {fileID: 423035432}
-  m_Father: {fileID: 1948830237}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &662784685
 GameObject:
@@ -17316,82 +17316,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5469546589709852183, guid: 6826028367ed8ac4884cc53dd23f546c, type: 3}
   m_PrefabInstance: {fileID: 1504311882}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1507414434
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1507414435}
-  - component: {fileID: 1507414439}
-  - component: {fileID: 1507414438}
-  m_Layer: 8
-  m_Name: End Door
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1507414435
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507414434}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.011, y: 1.1, z: 1.957}
-  m_LocalScale: {x: 1, y: 1.1111112, z: 0.7272727}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2104858065}
-  m_Father: {fileID: 652015592}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1507414438
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507414434}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: db3c458dc081c49348506c648e9c5fd4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!65 &1507414439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1507414434}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.55, y: 2.45, z: 3.5}
-  m_Center: {x: 0, y: 0.24, z: 0}
 --- !u!1 &1507543291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100122, guid: 9eb4d689eea78e54da10689d7d578cef, type: 3}
@@ -22361,7 +22285,6 @@ Transform:
   - {fileID: 230127565}
   - {fileID: 1062319280}
   - {fileID: 543450653421012272}
-  - {fileID: 652015592}
   - {fileID: 4810505365849827}
   - {fileID: 121654626}
   - {fileID: 208806537}
@@ -24379,7 +24302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2104858065}
   m_Layer: 8
-  m_Name: DoorDouble
+  m_Name: EndDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24393,14 +24316,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2104858064}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.028, y: -1.01, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -2.1830028e-32, w: 1}
+  m_LocalPosition: {x: 2.039, y: -0.022222275, z: 1.9570001}
+  m_LocalScale: {x: 1, y: 1.1111112, z: 0.7272727}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 249666946}
   - {fileID: 589206935}
-  m_Father: {fileID: 1507414435}
+  m_Father: {fileID: 652015592}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2110924309
 GameObject:
@@ -26097,7 +26020,7 @@ GameObject:
   - component: {fileID: 1071603319}
   - component: {fileID: 1071603318}
   m_Layer: 0
-  m_Name: vintage_grandfather_clock_01_4k
+  m_Name: Grandfather clock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27455,6 +27378,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1063491186}
+  - {fileID: 652015592}
   - {fileID: 2271036429879105427}
   - {fileID: 1208883405}
   - {fileID: 132332108}

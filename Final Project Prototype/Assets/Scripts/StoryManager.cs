@@ -49,11 +49,11 @@ public class StoryManager:MonoBehaviour
     }
     IEnumerator Ending()
     {
-        displayMessage("my memories of Jessica are flooding back.. ", 3f);
+        displayMessage("My memories of Jessica are flooding back.. ", 3f);
         yield return new WaitForSeconds(3.0f);
-        displayMessage("i remember my sister now. Jessica.", 3f);
+        displayMessage("I remember my sister now. Jessica.", 3f);
         yield return new WaitForSeconds(3.0f);
-        displayMessage("after all these years, i finally know the truth.", 3f);
+        displayMessage("After all these years, I finally know the truth.", 3f);
         yield return new WaitForSeconds(3.0f);
         displayMessage("I've been freed. It's time to go back.", 5f);
         end();
@@ -61,32 +61,31 @@ public class StoryManager:MonoBehaviour
     IEnumerator ExecuteWithDelay()
     {
         GUIManager.actionsEnabled = false;
-        displayMessage("my name is Olivia Campbell. i am a psychology student from Ohio",  4f);
+        displayMessage("My name is Olivia Campbell. I am a psychology student from Ohio.",  4f);
         yield return new WaitForSeconds(4f);
-        displayMessage("i recently visited my mother, who was very ill", 3f);
+        displayMessage("I recently visited my mother, who was very ill.", 3f);
         yield return new WaitForSeconds(3f);
-        displayMessage("before she passed away, she had a very strange request", 3f);
+        displayMessage("Before she passed away, she had a very strange request.", 3f);
         yield return new WaitForSeconds(3f);
-        displayMessage("she asked me to go back to our old, abandoned house to look for something important", 3f);
+        displayMessage("She asked me to go back to our old, abandoned house to look for something important.", 3f);
         yield return new WaitForSeconds(3f);
-        displayMessage("she refused to tell me what it was, but i had to agree", 3f);
+        displayMessage("She refused to tell me what it was, but I had to agree.", 3f);
         yield return new WaitForSeconds(3f);
-        displayMessage("so here I am, back home. looks like the electricity no longer works.", 3f);
+        displayMessage("...So here I am, back home. Looks like the electricity no longer works.", 3f);
         GUIManager.actionsEnabled = true;
     }
     public void backOff()
     {
-        displayMessage("i bet there's still more to explore in this room",2f);
+        displayMessage("I bet there's still more to explore in this room...",2f);
     }
     
     public void askToLook()
     {
-        displayMessage("i'll open the chest after i find some more stuff", 3f);
+        displayMessage("I'll open the chest after I find some more things.", 3f);
     }
 
-    //GRACE YOU CAN DO WHATEVER ENDING CODE YOU NEED DOWN HERE IN THE END FUNCTION
     void end()
     {
-
+        SceneManager.LoadScene("Ending1");
     }
 }
